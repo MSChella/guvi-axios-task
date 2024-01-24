@@ -31,8 +31,8 @@
       "error",
       {
         " components": [
-          "App",
-          "MainPageCard"
+          "/App",
+          "Pages/HomePage"
         ],
         "specialLink": [
           "#!"
