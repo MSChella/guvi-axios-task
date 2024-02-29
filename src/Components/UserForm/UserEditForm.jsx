@@ -44,7 +44,7 @@ const UserEditForm = ({ onSave, userToEdit }) => {
                 </label>
                 <button type="submit">{userToEdit ? 'Save Changes' : 'Add User'}</button>
             </form>
-            <ul>
+            <ul className="list-group">
 
                 Name: {formData.name}<br></br>
                 Username: {formData.username} <br></br>mail-Id:({formData.email})

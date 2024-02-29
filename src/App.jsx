@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <SignupForm />
 
       <Routes>
-        <Route Component={HomePage} path='/home'></Route>
+        <Route Component={SignupForm} path='/signup'> </Route>
+        <Route Component={HomePage} path='/'></Route>
         <Route Component={Login} path='/login'></Route>
       </Routes>
 

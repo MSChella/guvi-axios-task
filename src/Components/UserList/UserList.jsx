@@ -47,13 +47,13 @@ const UserList = ({ onEdit }) => {
     return (
         <div>
             <h2>User List</h2>
-            <ul>
+            <ul class="list-group">
                 {users.map((user) => (
-                    <li key={user.id} user={user}>
+                    <li class="list-group-item active" aria-current="true" key={user.id} user={user}>
                         Name: {user.name}<br></br>
                         Username: {user.username} <br></br>mail-Id({user.email})
-                        <button onClick={() => handleEditClick(user)}>Edit</button>
-                        <button onClick={() => handleDelete(user.id)}>Delete</button>
+                        <button className='btn btn-secondary px-1 mx-2' onClick={() => handleEditClick(user)}>Edit</button>
+                        <button className='btn btn-secondary px-1 mx-2' onClick={() => handleDelete(user.id)}>Delete</button>
                     </li>
                 ))}
             </ul>
